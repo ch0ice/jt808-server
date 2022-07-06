@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>jt808-server</artifactId>
+        <groupId>cn.com.onlinetool</groupId>
+        <version>0.1.0</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <packaging>jar</packaging>
+
+    <artifactId>jt808-server-core</artifactId>
+
+    <properties>
+        <maven.compiler.source>8</maven.compiler.source>
+        <maven.compiler.target>8</maven.compiler.target>
+
+        <mockito.version>1.10.19</mockito.version>
+        <netty.version>4.1.42.Final</netty.version>
+        <fastjson>1.2.41</fastjson>
+        <client.proptocol.version>2.1</client.proptocol.version>
+        <marshalling.version>2.0.6.Final</marshalling.version>
+        <lombok.version>1.18.4</lombok.version>
+        <msgpack.version>0.6.12</msgpack.version>
+        <spring-boot-starter>2.1.6.RELEASE</spring-boot-starter>
+        <maven-surefire>2.22.2</maven-surefire>
+        <client.proptocol.version>2.1</client.proptocol.version>
+        <commons.lang3.version>3.7</commons.lang3.version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>cn.com.onlinetool</groupId>
+            <artifactId>jt808-server-protocol</artifactId>
+            <version>0.1.0</version>
+        </dependency>
+
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot-starter}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-configuration-processor</artifactId>
+            <version>${spring-boot-starter}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+            <version>${spring-boot-starter}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${spring-boot-starter}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring-boot-starter}</version>
+        </dependency>
+
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot-starter}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.amqp</groupId>
+            <artifactId>spring-rabbit-test</artifactId>
+            <version>${spring-boot-starter}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
